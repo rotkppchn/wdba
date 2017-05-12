@@ -1,7 +1,7 @@
 RewriteEngine On
 RewriteCond %{HTTPS} off [OR]
-RewriteCond %{HTTP_HOST} !^www\.zufriedenheit\.org$ [NC]
-RewriteRule ^(.*)$ https://www.zufriedenheit.org/$1 [L,R=301]
+RewriteCond %{HTTP_HOST} !^www\.DOMAIN\.TLD$ [NC]
+RewriteRule ^(.*)$ https://www.DOMAIN.TLD/$1 [L,R=301]
 
 <ifModule mod_headers.c>
 Header set Connection keep-alive
